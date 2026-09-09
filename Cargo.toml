@@ -1,0 +1,15 @@
+[package]
+name = "rust-chess-engine"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "A single-threaded UCI chess engine"
+license = "MIT"
+
+[dependencies]
+chess = "3.2.0"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+panic = "abort"

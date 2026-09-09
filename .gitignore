@@ -1,0 +1,5 @@
+/target/
+/future/
+*.log
+.DS_Store
+__pycache__/
